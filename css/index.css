@@ -1,0 +1,93 @@
+:root {
+    --primary-color: rgba(255, 255, 255, 1);
+    --secondary-color: rgba(1, 42, 34, 1);
+    --primary-font-color: rgba(255, 255, 255, 1);
+    --header-font-color: rgba(1, 42, 34, 1);
+    --sub-header-font-color: rgba(6, 85, 69, 1);
+    --article-font-color: rgba(61, 61, 61, 1);
+}
+
+html, body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(1rem, 1rem + 2vw, 5rem);
+}
+
+body, p, a, span, div {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    padding: 0 2.5vw;
+    box-sizing: border-box;
+}
+
+header .header-logo-holder {
+    max-width: 271.62px;
+    min-height: 124px;
+    display: flex;
+    flex-shrink: 1;
+}
+
+.header-nav-holder {
+    display: flex;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    width: 28.175%;
+    justify-content: space-between;
+    gap: 2vw; 
+    flex-shrink: 1;
+}
+
+.header-nav-holder ul {
+    display: flex; 
+    padding: 0; 
+    margin: 0; 
+    list-style: none; 
+    gap: 2vw;
+}
+
+.header-nav-holder ul li {
+    /* Optional: Adjust if needed */
+}
+
+.header-nav-holder ul li a {
+    text-decoration: none;
+    color: #222222;
+    line-height: 1.6875rem;
+    flex-grow: 1;
+    font-weight: 700;
+}
+
+main {
+    background-color: var(--primary-color);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-image: url('../images/heroimage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
