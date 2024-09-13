@@ -36,45 +36,57 @@ header {
     top: 0;
     padding: 0 2.5vw;
     box-sizing: border-box;
-}
-
-header .header-logo-holder {
-    max-width: 271.62px;
-    min-height: 124px;
-    display: flex;
     flex-shrink: 1;
 }
 
-.header-nav-holder {
+header .header-logo-holder {
+    max-width: 15vw;;
+    min-height: auto;
     display: flex;
+    flex-shrink: 1;
+    object-fit: contain;
+}
+.header-logo-holder img {
+    width: 100%; 
+    height: auto;
+    max-width: 100%; 
+}
+
+.header-nav-holder {
+    display: inline-flex;
     list-style: none; 
     padding: 0;
     margin: 0;
-    width: 28.175%;
     justify-content: space-between;
-    gap: 2vw; 
+    gap: 2vw;
+}
+
+.header-nav-holder > *{
     flex-shrink: 1;
 }
 
 .header-nav-holder ul {
-    display: flex; 
+    display: inline-flex;
     padding: 0; 
     margin: 0; 
-    list-style: none; 
+    list-style: none;
     gap: 2vw;
+    font-size: clamp(0.5rem, calc(0.5rem + (1.125rem - 0.5rem) * ((100vw - 320px) / (1600 - 320))), 1.125rem);
+    flex-shrink: 1;
 }
-
-.header-nav-holder ul li {
-    /* Optional: Adjust if needed */
+.header-nav-holder ul > *{
+    flex-grow: 1;
 }
 
 .header-nav-holder ul li a {
     text-decoration: none;
     color: #222222;
     line-height: 1.6875rem;
-    flex-grow: 1;
     font-weight: 700;
-}
+    text-align: center;
+    max-width: 56px;
+    flex-grow: 1;
+}   
 
 main {
     background-color: var(--primary-color);
