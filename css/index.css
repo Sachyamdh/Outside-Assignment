@@ -102,4 +102,25 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     max-width: 100%;
+    padding-left: 10vw;
+}
+
+.hero .hero-content{
+    max-width: 53.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .hero-content, h1,article{
+    color: var(--primary-font-color);
+}
+
+.hero .hero-content, h1{
+    font-size: clamp(2rem, 4vw + 1rem, 80px);
+    font-weight: 700;
+}
+
+.hero .hero-content, article{
+    font-size: clamp(1rem, 1.75vw, 28px);
+    font-weight: 400;
 }
