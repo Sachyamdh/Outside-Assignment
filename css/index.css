@@ -189,6 +189,21 @@ main {
     margin-left: 1vw;
 }
 
+.article-grid .article-grid-articles .second-content button{
+    border-radius: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: 1px solid var(--article-font-color);
+    width: 3rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.article-grid .article-grid-articles .second-content button:hover{
+    width: 6rem;
+    background-color: #FEBF58;
+    transition: 0.5s ease-in-out;
+    border: none;
+}
 .article-grid .article-grid-articles h6{
     max-width: 16vw;
     font-size: clamp(1rem,2vw,2.5rem);
@@ -221,11 +236,16 @@ main {
 .last-child{
     width: 100%;
     background-color: var(--secondary-color);
+    padding-top: 10vh;
 }
 
-.last-child h6{
+.last-child h4{
     font-size: clamp(2rem, 4vw + 1rem, 5vw);
-    font-weight: 700;
+    font-weight: 600;
     max-height: 90px;
     margin: 0;
+    margin-left: 10vw;
+    font-size: clamp(2rem,3vw, 3vw);
+    color: #9FF1D5;
+
 }
