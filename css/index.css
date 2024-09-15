@@ -237,6 +237,7 @@ main {
     width: 100%;
     background-color: var(--secondary-color);
     padding-top: 10vh;
+    height: 100%;
 }
 
 .last-child h4{
@@ -248,4 +249,44 @@ main {
     font-size: clamp(2rem,3vw, 3vw);
     color: #9FF1D5;
 
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1vw;
+    margin: 0 10vw;
+    min-height: 85vh;
+    padding: 0;
+}
+
+.video-grid-articles:nth-child(2), 
+.video-grid-articles:nth-child(3) {
+    border-left: 2px solid  #065545;
+    border-top: 1px solid #065545
+}
+
+.video-grid-articles {
+    display: flex;
+    flex-direction: column;
+}
+.video-grid .video-grid-articles .article-image-holder{
+    min-height: 50vh;
+}
+.video-grid .video-grid-articles .article-image-holder iframe{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+.video-grid .video-grid-articles p{
+    max-width: 16vw;
+    font-size: clamp(0.5rem,1vw,1rem);
+    color: var(--primary-font-color);
+    max-height: 72px;
+}
+
+.video-grid .video-grid-articles .second-content{
+    margin-left: 1vw;
 }
