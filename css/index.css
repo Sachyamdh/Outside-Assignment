@@ -100,6 +100,8 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     padding-left: 10vw;
+    flex-shrink: 1;
+    overflow: hidden;
 }
 
 .hero-content {
@@ -113,6 +115,8 @@ main {
 
 .hero-content h1, .hero-content p {
     color: var(--primary-font-color);
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .hero-content h1 {
@@ -120,6 +124,7 @@ main {
     font-weight: 700;
     max-height: 90px;
     margin: 0;
+    flex-shrink: 1;
     margin-bottom: 2vh;
 }
 
