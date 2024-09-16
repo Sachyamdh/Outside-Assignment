@@ -299,13 +299,13 @@ main {
     border-left: 2px solid #065545;
 }
 
-.video-grid-articles .article-image-holder {
+.video-grid-articles .iframe-container {
     grid-row: 1;
     border-bottom: 2px solid #065545;
     padding-left: 1vw;
 }
 
-.video-grid-articles .article-image-holder iframe {
+.video-grid-articles .iframe-container video {
     width: 100%;
     object-fit: cover;
     height: 100%;
