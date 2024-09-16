@@ -38,6 +38,7 @@ html, body {
     margin: 0;
     padding: 0;
     max-width: 100%;
+    animation: fadeIn 1s  0.2s ease-in;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,6 +82,7 @@ header {
     padding: 0;
     margin: 0;
     gap: 2vw;
+    animation: fadeIn 1s  0.5s ease-in;
 }
 
 .header-nav-holder ul {
@@ -129,6 +131,7 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+    max-height: 75vh;
     margin-top: 15vh;
 }
 
@@ -142,7 +145,7 @@ main {
 
 
 .hero-content h1 {
-    font-size: clamp(2rem, 4vw , 5vw);
+    font-size: clamp(1.5rem, 4vw , 5vw);
     font-weight: 700;
     max-height: 95px;
     margin: 0;
@@ -193,6 +196,11 @@ main {
     column-gap: 1vw;
     margin: 0 10vw;
     min-height: 90vh;
+    
+}
+@media(max-width: 730px) {
+    .article-grid{
+    max-height: 50vh;}
 }
 
 .article-grid-articles {
@@ -207,6 +215,7 @@ main {
 
 .article-grid-articles .second-content {
     margin-left: 1vw;
+    height: 40%;
 }
 
 .article-grid-articles .second-content button {
@@ -246,6 +255,7 @@ main {
     width: 100%;
     max-width: 100%;
     object-fit: cover;
+    height: 60%;
 }
 
 .article-grid-articles .article-image-holder img {
