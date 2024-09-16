@@ -236,7 +236,7 @@ main {
 }
 
 .last-child h4 {
-    font-size: clamp(2rem, 4vw + 1rem, 5vw);
+    font-size: clamp(2rem, 3vw, 3vw);
     font-weight: 600;
     max-height: 90px;
     margin: 0;
