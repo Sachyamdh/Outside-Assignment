@@ -309,18 +309,19 @@ main {
 .footer .company-socials {
     display: flex;
     flex-direction: column;
+    max-width: 13.81vw;
     gap: 5vh;
 }
 
 .company-socials .header-logo-holder{
-    max-width: 130px;
+    max-width: 8.5vw;
     max-height: 125px;
     object-fit: contain;
 }
 .social-icons {
     display: flex;
     padding-top: 2vh;
-    gap: 1rem;
+    gap: 1vw;
     border-top: 1px solid var(--sub-header-font-color);
     color: #012A22;
 }
@@ -331,12 +332,13 @@ main {
 .items-holder {
     display: flex;
     gap: 1rem;
+    font-size: clamp(0.5rem, 1.4vw, 1rem);
 
 }
 .items-holder .item-holder {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.5vw;
     width: 11vw;
 }
 
@@ -350,5 +352,6 @@ main {
 }
 .iconify {
     color: #012A22; 
-    font-size: 24px; 
+    font-size:1.4vw; 
+    max-width: 13.81vw;
   }
